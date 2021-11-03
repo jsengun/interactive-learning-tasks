@@ -1,20 +1,21 @@
-resource "aws_iam_group_membership" "team" {
-  name = "sysusers"
-  users = [
-    aws_iam_user.user_one.name,
-    
-  ]
-  group = aws_iam_group.group.name
-  
-}
-resource "aws_iam_group" "group" {
-  name = "sysusers"
-}
-resource "aws_iam_user" "user_one" {
-  name = "bob"
-  
- tags = {
-    Name = "Team"
-    Environment = "DevOps"
+resource “aws_iam_user” “bob” {
+  name = “bob”
+  tags = {
+    Team=“DevOps”
   }
+
+
+}
+resource “aws_iam_group” “sysusers” {
+  name = “sysusers”
+}
+
+
+
+resource “aws_iam_user_group_membership” “sysusersgroup” {
+  user = aws_iam_user.bob.name
+
+  groups = [
+    aws_iam_group.sysusers.name,
+  ]
 }
