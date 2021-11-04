@@ -1,12 +1,13 @@
 
-output "region" {
-    description = "region"
-  value = aws.region 
+output "aws_region" {
+    description = "aws_region"
+  value = aws_key_pair.ilearning-wordpress.aws_region
+
 }
 
-output "key_id" {
-    description = "key_id"
-  value = aws_key_pair.ilearning-wordpress.id
+output "key_pair_id" {
+    description = "key_pair_id"
+  value = aws_key_pair.ilearning-wordpress.key_pair_id
 
 }
 
