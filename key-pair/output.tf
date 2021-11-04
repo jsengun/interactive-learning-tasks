@@ -1,3 +1,6 @@
+output  “region” {
+  value = “us-east-2"
+}
 
 
 output "key_pair_id" {
