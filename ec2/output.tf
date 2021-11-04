@@ -10,6 +10,10 @@ output "AZ" {
   value = aws_instance.web.availability_zone
 }
 
-output "Region" {
+output "aws_instance_region" {
   value = "us-east-1"
+}
+
+output "ID" {
+  value = aws_instance.web.id
 }
