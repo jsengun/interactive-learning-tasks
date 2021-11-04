@@ -8,10 +8,10 @@ resource "aws_route53_zone" "dev" {
 }
   
 
-resource "aws_route53_record" "dev-ns" {
+resource "aws_route53_record" "wordpress" {
   zone_id = "Z02071922GQJ74VZ692DR"
   name    = "wordpress.jsengun.com"
   type    = "NS"
-  ttl     = "300"
-  records = ["127.0.0.1"]
+  ttl     = "30"
+  records = [aws_instance.web.public_ip]
 }

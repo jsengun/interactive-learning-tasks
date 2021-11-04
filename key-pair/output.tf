@@ -1,9 +1,4 @@
 
-output "aws_region" {
-    description = "aws_region"
-  value = aws_key_pair.ilearning-wordpress.aws_region
-
-}
 
 output "key_pair_id" {
     description = "key_pair_id"
