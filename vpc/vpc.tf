@@ -1,8 +1,9 @@
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
   tags = {
-    Team = DevOps
-    Environment = Dev
+    Name = "aws_vpc"  
+    Team = "DevOps"
+    Environment = "Dev"
   }
 }
 
@@ -11,6 +12,8 @@ resource "aws_subnet" "public1" {
   cidr_block = "10.0.101.0/24"
   tags = {
     Name = "public1"
+    Team = "DevOps"
+    Environment = "Dev"
   }
 }
 
@@ -19,6 +22,8 @@ resource "aws_subnet" "public2" {
   cidr_block = "10.0.102.0/24"
   tags = {
     Name = "public2"
+    Team = "DevOps"
+    Environment = "Dev"
   }
 }
 
@@ -27,6 +32,8 @@ resource "aws_subnet" "public3" {
   cidr_block = "10.0.103.0/24"
   tags = {
     Name = "public3"
+    Team = "DevOps"
+    Environment = "Dev"
   }
 }
 
@@ -36,6 +43,8 @@ resource "aws_subnet" "private1" {
   cidr_block = "10.0.1.0/24"
   tags = {
     Name = "private1"
+    Team = "DevOps"
+    Environment = "Dev"
   }
 }
 
@@ -44,6 +53,8 @@ resource "aws_subnet" "private2" {
   cidr_block = "10.0.2.0/24"
   tags = {
     Name = "private2"
+    Team = "DevOps"
+    Environment = "Dev"
   }
 }
 
@@ -52,5 +63,7 @@ resource "aws_subnet" "private3" {
   cidr_block = "10.0.3.0/24"
   tags = {
     Name = "private3"
+    Team = "DevOps"
+    Environment = "Dev"
   }
 }
