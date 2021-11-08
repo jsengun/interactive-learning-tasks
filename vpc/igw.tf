@@ -18,10 +18,7 @@ resource "aws_route_table" "example" {
   route {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.gw.id
-  }
-
-  tags = {
-    Name = "Three-Tier"
+  
   }
 }
 
