@@ -1,5 +1,5 @@
 # output = "aws_vpc" "main" {
-#     value = aws_vpc.main.
+#     value = aws_vpc.main.aws_vpc
 
 
 
