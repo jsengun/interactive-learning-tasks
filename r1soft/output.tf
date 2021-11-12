@@ -10,13 +10,6 @@ output "ARN" {
   value = aws_iam_user.example.arn
 }
 
-# output "ARN" {
-#   value = aws_instance.web.arn
-# }
-
-# output "password" {
-#   value = aws_iam_user_login_profile.example.encrypted_password
-# }
 
 output "User" {
     value = var.user
