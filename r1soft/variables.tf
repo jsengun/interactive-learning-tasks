@@ -1,3 +1,23 @@
+variable "user" {
+  type        = string
+  description = "Please provide a region for instances"
+  default     = "admin"
+}
+
+variable "pass" {
+  type        = string
+  description = "Please provide a region for instances"
+  default     = "redhat"
+}
+
+
+
+
+
+
+
+
+
 # variable "region" {
 #   type        = string
 #   description = "Please provide a region for instances"
