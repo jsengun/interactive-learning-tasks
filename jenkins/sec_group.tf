@@ -1,4 +1,4 @@
-resource "aws_security_group" "sec_group_for_jenkins" {
+resource "aws_security_group" "sec_gr_jenkins" {
   name = var.sec_group_name
   ingress {
     from_port   = 22
